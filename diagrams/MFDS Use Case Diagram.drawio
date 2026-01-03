@@ -1,0 +1,84 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="6isSPYcXED2DKq-uxlxp">
+    <mxGraphModel dx="2206" dy="1342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qx2nSJOwtR81D3h5Q4VH-1" target="Qx2nSJOwtR81D3h5Q4VH-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qx2nSJOwtR81D3h5Q4VH-1" target="Qx2nSJOwtR81D3h5Q4VH-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="400" />
+              <mxPoint x="230" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qx2nSJOwtR81D3h5Q4VH-1" target="Qx2nSJOwtR81D3h5Q4VH-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Qx2nSJOwtR81D3h5Q4VH-1" target="Qx2nSJOwtR81D3h5Q4VH-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="435" />
+              <mxPoint x="395" y="435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-1" value="Fuel&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Attendant&lt;/span&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="380" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-4" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="50" width="270" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-5" value="Add new fuel" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Qx2nSJOwtR81D3h5Q4VH-4">
+          <mxGeometry x="65" y="44" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-6" value="get available fuel" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Qx2nSJOwtR81D3h5Q4VH-4">
+          <mxGeometry x="65" y="128" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-7" value="update fuel price" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Qx2nSJOwtR81D3h5Q4VH-4">
+          <mxGeometry x="65" y="210" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-8" value="restock fuel" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Qx2nSJOwtR81D3h5Q4VH-4">
+          <mxGeometry x="65" y="310" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-9" value="dispense fuel&amp;nbsp;&lt;div&gt;via anount&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Qx2nSJOwtR81D3h5Q4VH-4">
+          <mxGeometry x="65" y="405" width="140" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-10" value="dispense fuel&amp;nbsp;&lt;div&gt;via price&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Qx2nSJOwtR81D3h5Q4VH-4">
+          <mxGeometry x="65" y="508" width="140" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-11" value="get transactions" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Qx2nSJOwtR81D3h5Q4VH-4">
+          <mxGeometry x="65" y="620" width="140" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.303;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Qx2nSJOwtR81D3h5Q4VH-1" target="Qx2nSJOwtR81D3h5Q4VH-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="380" />
+              <mxPoint x="190" y="158" />
+              <mxPoint x="367" y="158" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Qx2nSJOwtR81D3h5Q4VH-1" target="Qx2nSJOwtR81D3h5Q4VH-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="440" />
+              <mxPoint x="220" y="592" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qx2nSJOwtR81D3h5Q4VH-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.003;entryY=0.631;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Qx2nSJOwtR81D3h5Q4VH-1" target="Qx2nSJOwtR81D3h5Q4VH-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="440" />
+              <mxPoint x="210" y="704" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
