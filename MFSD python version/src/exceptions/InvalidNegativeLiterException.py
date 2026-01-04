@@ -1,0 +1,2 @@
+class InvalidNegativeLiterException(Exception):
+    pass

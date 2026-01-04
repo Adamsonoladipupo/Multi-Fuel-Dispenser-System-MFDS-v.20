@@ -2,12 +2,16 @@ from entities.Fuel import Fuel
 
 from exceptions.FuelDuplicateException import FuelDuplicateException
 from exceptions.FuelQuantityIsNotLowException import FuelQuantityIsNotLowException
+from exceptions.InvalidLowPriceException import InvalidLowPriceException
+from exceptions.InvalidHighPriceException import InvalidHighPriceException
+from exceptions.InvalidNegativeLiterException import InvalidNegativeLiterException
 from exceptions.NonExistingFuelException import NonExistingFuelException
 
 
 class Dispenser:
     def __init__(self):
         self.__fuel_store = {}
+        self.records = []
 
     def add_fuel (self, fuel: Fuel):
         self.validate_fuel_non_existence(fuel)
@@ -38,15 +42,38 @@ class Dispenser:
             raise NonExistingFuelException("Fuel does not exist")
 
 
-    def restock_fuel(self, fuel_name, ):
-        if fuel_name in self.__fuel_store:
-            fuel = self.get_fuel_by_name(fuel_name)
-            if fuel.get_price_per_liter() < 50:
-                fuel.set_quantity(50)
-            elif fuel.get_price_per_liter() == 50:
-                raise FuelQuantityIsNotLowException("Fuel quantity is not low")
-        else:
-            raise NonExistingFuelException ("Fuel does not exist")
+    def restock_fuel(self, fuel_name, quantity):
+        self.validate_fuel_existence_by_name(fuel_name)
+        self.__fuel_store[fuel_name].quantity += quantity
+
+    def dispense_fuel_by_price(self, fuel_name, price):
+        self.validate_fuel_existence_by_name(fuel_name)
+        self.validate_input_attendant_price(fuel_name, price)
+        liter = price / self.__fuel_store[fuel_name].price_per_liter
+        self.validate_liter_to_be_dispensed(fuel_name, liter)
+        self.__fuel_store[fuel_name].quantity -= liter
+        return liter
+
+    def dispense_fuel_by_liters(self, fuel_name, liters):
+        self.validate_fuel_existence_by_name(fuel_name)
+        self.validate_liter_to_be_dispensed(fuel_name, liters)
+        price = liters * self.__fuel_store[fuel_name].price_per_liter
+        self.validate_input_attendant_price(fuel_name, price)
+        self.__fuel_store[fuel_name].quantity -= liters
+        return price
+
+
+    def validate_liter_to_be_dispensed(self, fuel_name, quantity):
+        if quantity <= 0:
+            raise InvalidNegativeLiterException ("Liter is less than 0")
+        if quantity > self.__fuel_store[fuel_name].quantity:
+            raise FuelQuantityIsNotLowException ("Fuel quantity is lower than input liters")
+
+    def validate_input_attendant_price(self, fuel_name, price):
+        if price < self.__fuel_store[fuel_name].price_per_liter:
+            raise InvalidLowPriceException ("Fuel price is lower than 1 litre")
+        if price > self.__fuel_store[fuel_name].price_per_liter * 50:
+            raise InvalidHighPriceException ("Fuel price is higher than 50 litre")
 
     def validate_fuel_non_existence(self, fuel: Fuel):
         if fuel.name in self.__fuel_store:
