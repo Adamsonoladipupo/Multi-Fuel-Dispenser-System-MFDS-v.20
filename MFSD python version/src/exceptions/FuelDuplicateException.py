@@ -1,0 +1,2 @@
+class FuelDuplicateException(Exception):
+    pass

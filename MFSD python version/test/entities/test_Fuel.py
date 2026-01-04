@@ -15,6 +15,5 @@ class TestFuel(TestCase):
     def test_fuel_qnatity(self):
         fuel = Fuel("Kerosene", 500, 50)
         self.assertEqual(fuel.get_quantity(), 50)
-        print(fuel)
 
 

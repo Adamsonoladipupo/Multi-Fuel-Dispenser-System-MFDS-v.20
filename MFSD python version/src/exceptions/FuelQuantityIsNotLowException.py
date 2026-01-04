@@ -1,0 +1,2 @@
+class FuelQuantityIsNotLowException(Exception):
+    pass

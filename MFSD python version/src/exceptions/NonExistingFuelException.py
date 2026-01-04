@@ -1,0 +1,2 @@
+class NonExistingFuelException(Exception):
+    pass
