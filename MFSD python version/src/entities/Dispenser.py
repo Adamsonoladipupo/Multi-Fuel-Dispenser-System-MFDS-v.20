@@ -25,10 +25,6 @@ class Dispenser:
     def get_records(self):
         return self.__records
 
-    def print_all_records(self):
-        for record in self.__records:
-            print(record)
-
     def add_record(self, record):
         self.__records.append(record)
 

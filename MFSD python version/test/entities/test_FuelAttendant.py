@@ -12,5 +12,10 @@ class TestFuelAttendant(TestCase):
         self.assertFalse(fuel_attendant.is_empty())
         fuel_attendant.dispense_fuel_by_price("gasoline", 2000)
         self.assertEqual(48, fuel.get_quantity())
-        fuel_attendant.print_all_records()
+
+        for record in fuel_attendant.get_records():
+            print(record)
+
+        for fuel in fuel_attendant.get_available_fuels().values():
+            print(fuel)
 
